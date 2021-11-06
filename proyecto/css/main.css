@@ -1,0 +1,464 @@
+body{
+background-color: #ffffff;
+margin: 0;
+padding: 0;
+line-height: 2.5em;
+}
+
+img{
+max-width: 100%;
+}
+
+h1{
+font-family: roboto, sans-serif;
+font-size: 42px;
+color: #3668B1;
+}
+
+h2{
+font-family: roboto, sans-serif;
+font-size: 37px;
+color: #3668B1;
+}
+
+h3{
+font-family: roboto, sans-serif;
+font-size: 32px;
+}
+
+h4{
+font-family: roboto, sans-serif;
+font-size: 24px;
+margin: 0;
+padding: 0;
+}
+
+h5{
+font-family: roboto, sans-serif;
+font-size: 18px;
+color: #3668B1;
+margin: 0;
+padding: 0;
+}
+
+h6{
+font-family: roboto, sans-serif;
+font-size: 16px;
+margin: 0;
+padding: 0;
+}
+
+a{
+text-decoration: none;
+}
+
+p{
+    color: #3668B1;
+}
+
+nav{
+display: grid;
+grid-template-areas: 
+"logo links links links links boton "
+"inicio inicio inicio inicio inicio inicio"
+"banner banner banner banner banner banner"
+"actividades actividades actividades actividades actividades actividades"
+"footer footer footer footer footer footer";
+grid-gap: 10px;
+}
+
+.logo{
+grid-area: logo;
+max-width: 5em;
+margin: 1em 0em 0 3em;
+transition: transform .2s;
+}
+
+.logo:hover{
+transform: scale(1.5);
+}
+
+
+.links{
+grid-area: links;
+display: flex;
+padding: 0 10em 0 10em;
+}
+
+.links h5{
+color: #3668B1;
+background-color: #ffffff;
+margin: 2em 2em 0 2em;
+text-align: center;
+}
+
+.links h5:hover {
+color: #010914;
+}
+
+button{
+grid-area: boton;
+border-radius: 30px;
+background-color: #3668B1;
+color: #ffffff;
+margin: 1em 2em 0em 0 ;
+}
+
+button:hover{
+background-color: #010914;
+}
+
+nav div h5{
+color: #ffffff;
+margin: 1em;
+} 
+
+#inicio{
+grid-area: inicio;
+display: flex;
+margin: 3em;
+}
+
+#inicio img{
+width: 100%;
+}
+
+#inicio h1{
+margin: 80px 10px 10px 10px;
+}
+
+#inicio h3{
+margin: 10px;
+color: #3668B1;
+}
+
+#inicio button h5{
+
+border-radius: 30px;
+color: #ffffff;
+margin: 1em;
+}
+
+.banner{
+margin: 3em 6em 3em 6em;
+background-color: #3668B1;
+border-radius: 10px;
+grid-area: banner;
+display: flex;
+}
+
+.banner h2{
+color: #ffffff;
+align-self: center;
+padding: 0 0 0 .5em;
+}
+
+.banner h3{
+color: #ffffff;
+align-self: center;
+padding: 0 0 0 .5em;
+}
+
+.banner img{
+width: 50em;
+height: 22em;
+border-radius: 10px 0px 0 10px;
+}
+
+.texto1{
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+margin: 0 10em 0 10em;
+border-radius:10px ;
+padding: 1em;
+}
+
+.texto1 h2{
+color: #3668B1;
+text-align: left;
+}
+
+.texto1 h3{
+text-align: left;
+color: #3668B1;
+}
+
+.actividades{
+grid-area: actividades;
+max-width: 100%;   
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 1em;
+}
+
+.actividades .cards{
+width: 330px;
+height: 430px;
+border-radius: 8px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+overflow: hidden;
+margin: 20px;
+text-align: left;
+transition: all 0.25s;
+}
+
+.actividades .cards:hover{
+transform: translateY(-15px);
+box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2 );
+}
+
+.actividades .cards img{
+width: 330px;
+height: 220px;
+}
+
+.actividades .cards h4{
+font-weight: 600;
+text-align: left;
+padding: 0 1rem;
+color: #3668B1;
+}
+
+.actividades .cards h6{
+padding: 0 1rem;
+font-size: 16px;
+font-weight: 300;
+color: #3668B1;
+}
+
+.footer{
+grid-area: footer;
+display: flex;
+background-color: #3668B1;
+color: #ffffff;
+padding: 1em;
+}
+
+.footer .contactos{
+padding: 0 0em 0 2em;
+align-content: left;
+color: #ffffff;
+}
+
+.footer .redes .whatsapp{
+color: #ffffff;
+margin: 0em 0em 0em 20em;
+display: flex;
+align-items: center;
+
+}
+
+.footer .redes .facebook{
+color: #ffffff;
+margin: 0em 0em 0em 20em;
+display: flex;
+align-items: center;
+}
+
+.footer .redes .instagram{
+color: #ffffff;
+margin: 0em 0em 0em 20em;
+display: flex;
+align-items: center;
+}
+
+.footer .derechos{
+text-align: end;
+padding: 10px;
+margin: 0em 0em 0em 20em;
+}
+
+.container{
+max-width: 100%;   
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 1em;
+}
+
+.container .card{
+width: 330px;
+height: 430px;
+border-radius: 8px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+overflow: hidden;
+margin: 20px;
+text-align: left;
+transition: all 0.25s;
+}
+
+.container .card:hover{
+transform: translateY(-15px);
+box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2 );
+}
+
+.container .card img{
+width: 330px;
+height: 220px;
+}
+
+.container .card h5{
+font-weight: 600;
+text-align: center;
+}
+
+.container .card h6{
+padding: 0 1rem;
+font-weight: 300;
+color: #3668B1;
+}
+
+.container .card a{
+font-weight: 500;
+text-decoration: none;
+color: #3498db;
+}
+
+
+
+/*quienes somos*/
+
+.inicio{
+background-image: url(../img/quienes_somos.jpg);
+width: 80em;
+height: 50em;
+}
+
+.texto2{
+background-color: #ffffff;
+width: 30em;
+height: 20em;
+margin: 0em 4em 0 4em;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+border-radius:10px ;
+padding: 1em;
+}
+
+.texto2 h2{
+text-align: center;
+color: #3668B1;
+}
+
+.texto2 h3{
+color: #3668B1;
+}
+
+.quienes_somos{
+text-align: center;
+}
+
+.historia{
+margin: 3em 5em 3em 5em;
+line-height: 1.5em;
+}
+
+/*amigos*/
+
+.nuestros_amigos{
+display: flex;
+}
+
+.nuestros_amigos img{
+width: 40em;
+}
+
+.nuestros_amigos h3{
+color: #3668B1;
+}
+
+/*voluntarios*/
+
+.voluntarios{
+display: flex;
+}
+
+.voluntarios img{
+width: 40em;
+}
+
+.texto3{
+margin: 0 0 0 3em;
+}
+
+.texto3 h3{
+color: #3668B1;
+}
+
+/*match*/
+
+.match{
+margin: 0 0 0 3em;
+}
+
+.form-check {
+display: flex;
+margin: 0 0 0 3em;
+align-content: center;
+color: #3668B1;
+}
+
+/*registrarse*/
+
+.registro{
+display: flex;
+}
+
+.registro img{
+width: 60em;
+}
+
+.texto4{
+margin: 0 0 0 3em;
+}
+
+.texto4 h3{
+color: #3668B1;
+}
+
+.form{
+margin: 3em 0 0 3em;
+text-align: center;
+color: #010914;
+}
+
+.form-label h6{
+color: #3668B1;
+margin: 3em 0 0 0;
+}
+
+.form-control{
+text-align: left;
+background-color: #b8e0fa;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+max-width: 100%;
+width: 40em;
+height: 3em;
+border-radius: 10px;
+}
+
+.check{
+text-align: center;
+margin: 3em 0 0 0;
+color: #3668B1;
+}
+
+.btn-primary{
+background-color: #3668B1;
+color: #ffffff;
+margin: 3em;
+width: 10em;
+height: 3em;
+}
+
+.btn-primary button:hover{
+background-color: #4186f5;
+color: #041647;
+}
+
+/*=================================================================*/
+/*media queria*/
+/*=================================================================*/
+/* 
+@query{
+    
+} */

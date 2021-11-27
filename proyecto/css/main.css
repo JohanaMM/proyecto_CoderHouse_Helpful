@@ -1,6 +1,6 @@
-body{
+/* body{
 background-color: #ffffff;
-margin:4em;
+margin: 1em !important;
 padding: 0;
 line-height: 2.5em;
 }
@@ -14,17 +14,23 @@ h1{
 font-family: roboto, sans-serif;
 font-size: 42px;
 color: #011330;
+margin: 0;
+padding: 0;
 }
 
 h2{
 font-family: roboto, sans-serif;
 font-size: 37px;
 color: #011330;
+margin: 0;
+padding: 0;
 }
 
 h3{
 font-family: roboto, sans-serif;
 font-size: 32px;
+margin: 0;
+padding: 0;
 }
 
 h4{
@@ -47,13 +53,13 @@ font-family: roboto, sans-serif;
 font-size: 16px;
 margin: 0;
 padding: 0;
-}
+} */
 
 a{
 text-decoration: none;
 }
 
-p{
+/* p{
     color: #011330;
 }
 
@@ -66,7 +72,7 @@ grid-template-areas:
 "actividades actividades actividades actividades actividades actividades"
 "footer footer footer footer footer footer";
 grid-gap: 10px;
-}
+} */
 
 .logo{
 grid-area: logo;
@@ -124,11 +130,11 @@ width: 100%;
 }
 
 #inicio h1{
-margin: 80px 10px 10px 10px;
+    margin: 0 0 1rem 0;
 }
 
 #inicio h3{
-margin: 10px;
+margin: 0 0 1rem 0;
 color: #011330;
 }
 
@@ -268,7 +274,7 @@ margin: 1em;
 
 .container .card{
 width: 330px;
-height: 430px;
+height: 330px;
 border-radius: 8px;
 box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
 overflow: hidden;
@@ -403,32 +409,6 @@ margin: 0 0 0 3em;
 color: #011330;
 }
 
-.form{
-margin: 3em 0 0 3em;
-text-align: center;
-color: #010914;
-}
-
-.form-label h6{
-color: #011330;
-margin: 3em 0 0 0;
-}
-
-.form-control{
-text-align: left;
-background-color: #b8e0fa;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
-max-width: 100%;
-width: 40em;
-height: 3em;
-border-radius: 10px;
-}
-
-.check{
-text-align: center;
-margin: 3em 0 0 0;
-color: #011330;
-}
 
 .btn-primary{
 background-color: #011330;
@@ -450,3 +430,127 @@ color: #041647;
 @query{
     
 } */
+
+@media (min-width: 300px){
+
+   body{
+       margin: 0;
+   }
+  
+        
+        h1{
+        font-family: roboto, sans-serif;
+        font-size: 30px !important;;
+        }
+        
+        h2 {
+        font-family: roboto, sans-serif;
+        font-size: 24px;
+        }
+        
+        h3{
+        font-family: roboto, sans-serif;
+        font-size: 20px;
+        }
+        
+        h4{
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        }
+        
+        h5{
+        font-family: roboto, sans-serif;
+        font-size: 16px;
+        }
+        
+        h6{
+        font-family: roboto, sans-serif;
+        font-size: 14px;
+        }
+
+        p{
+            font-family: roboto, sans-serif;
+            font-size: 14px; 
+        }
+
+        img{
+            max-width: 100%;
+            display: flex;
+            margin: 0;
+            }
+
+        .logo{
+        grid-area: logo;
+        max-width: 1em;
+        margin: 1em 0em 0 3em;
+        }
+        
+        .navbar-toggler {
+        margin: 0 0 0 12rem
+        }
+
+        .form{
+            margin: 1em;
+        }
+}
+
+@media (min-width: 500px){
+
+    body{
+        margin: 0;
+    }
+   
+         
+         h1{
+         font-family: roboto, sans-serif;
+         font-size: 32px !important;;
+         }
+         
+         h2 {
+         font-family: roboto, sans-serif;
+         font-size: 26px;
+         }
+         
+         h3{
+         font-family: roboto, sans-serif;
+         font-size: 24px;
+         }
+         
+         h4{
+         font-family: roboto, sans-serif;
+         font-size: 20px;
+         }
+         
+         h5{
+         font-family: roboto, sans-serif;
+         font-size: 16px;
+         }
+         
+         h6{
+         font-family: roboto, sans-serif;
+         font-size: 14px;
+         }
+ 
+         p{
+             font-family: roboto, sans-serif;
+             font-size: 14px; 
+         }
+ 
+         img{
+             max-width: 100%;
+             display: flex;
+             margin: 0;
+             }
+ 
+         .logo{
+         grid-area: logo;
+         max-width: 1em;
+         margin: 1em 0em 0 3em;
+         }
+         
+         .navbar-toggler {
+         margin: 0 0 0 20rem
+         }
+ 
+
+ }

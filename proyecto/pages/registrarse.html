@@ -17,6 +17,7 @@
         href="https: //fonts.googleapis.com/css2? familia = Roboto: ital, wght @ 0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1,900 & display = swap "
         rel=" stylesheet ">
     <title>Helpful</title>
+     <!-- css main-->
     <link rel="stylesheet" href="../css/main.css">
   </head>
   
@@ -34,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
-                            <a class="nav-link active text-center" aria-current="page" href="quienes_somos.html">
+                            <a class="nav-link" aria-current="page" href="quienes_somos.html">
                                 <h5>Quienes Somos</h5>
                             </a>
                         </li>
@@ -70,7 +71,7 @@
     <section id="inicio">
       <div class="container">
           <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 text-left">
                   <h1>Ahora puedes registrarte</h1>
                   <h2>Nos alegra que hayas decidido ser parte de esta linda familia</h2>
                   <h3>Ingresa tus datos a continuación</h3>
@@ -82,58 +83,74 @@
       </div>
     </section>
     <!-- formulario -->
-    <div class="form>
-      <form class="registrarse">
-        <div class="nombre">
-          <label for="inputNombre" class="form-label">
-            <h6>Nombre</h6>
-          </label>
-          <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label"><h6>Nombre</h6></label>
+        <input type="text" class="form-control" id="validationCustom01" value="Ingresa tu nombre" required>
+        <div class="valid-feedback">
+          Looks good!
         </div>
-        <div class="apellido">
-          <label for="inputApellido" class="form-label">
-            <h6>Apellido</h6>
-          </label>
-          <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label"><h6>apellido</h6></label>
+        <input type="text" class="form-control" id="validationCustom02" value="Ingresa tu apellido" required>
+        <div class="valid-feedback">
+          Looks good!
         </div>
-        <div class="contraseña">
-          <label for="inputPassword4" class="form-label">
-            <h6>Contraseña</h6>
-          </label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
-        </div>
-        <div class="telefono">
-          <label for="inputtelefono" class="form-label">
-            <h6>Telefono</h6>
-          </label>
-          <input type="text" class="form-control" id="inputtelefono" placeholder="Telefono">
-        </div>
-        <div class="email">
-          <label for="inputEmail4" class="form-label">
-            <h6>Email</h6>
-          </label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-        </div>
-        <div class="ciudad">
-          <label for="inputCity" class="form-label">
-            <h6>Ciudad</h6>
-          </label>
-          <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
-        </div>
-        <div class="check">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              <h4>Estoy deacuerdo en que me contacten</h4>
-            </label>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label"><h6>Email</h6></label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" value="Ingresa tu email" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Please choose a username.
           </div>
         </div>
-        <div class="boton">
-          <button type="submit" class="btn btn-primary">Registrarse</button>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label"><h6>Pais</h6></label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
         </div>
-      </form>
-    </div>
-  </main>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label"><h6>Provincia</h6></label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="provincia">Provincia</option>
+          <option>Mendoza</option>
+          <option>Buenos Aires</option>
+          <option>Cordoba</option>
+          <option>Rosario</option>
+          <option>Santa Fe</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label"><h6>Telefono</h6></label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            <h4>Estoy deacuerdo en que me contacten</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Registrarse</button>
+      </div>
+    </form>
 
     <!-- pie de pagina // footer -->
     <!-- Footer -->

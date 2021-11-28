@@ -1,29 +1,36 @@
-body{
+/* body{
 background-color: #ffffff;
-margin: 0;
+margin: 1em !important;
 padding: 0;
 line-height: 2.5em;
 }
 
 img{
 max-width: 100%;
+display: flex;
 }
 
 h1{
 font-family: roboto, sans-serif;
 font-size: 42px;
-color: #3668B1;
+color: #011330;
+margin: 0;
+padding: 0;
 }
 
 h2{
 font-family: roboto, sans-serif;
 font-size: 37px;
-color: #3668B1;
+color: #011330;
+margin: 0;
+padding: 0;
 }
 
 h3{
 font-family: roboto, sans-serif;
 font-size: 32px;
+margin: 0;
+padding: 0;
 }
 
 h4{
@@ -36,7 +43,7 @@ padding: 0;
 h5{
 font-family: roboto, sans-serif;
 font-size: 18px;
-color: #3668B1;
+color: #011330;
 margin: 0;
 padding: 0;
 }
@@ -46,14 +53,14 @@ font-family: roboto, sans-serif;
 font-size: 16px;
 margin: 0;
 padding: 0;
-}
+} */
 
 a{
 text-decoration: none;
 }
 
-p{
-    color: #3668B1;
+/* p{
+    color: #011330;
 }
 
 nav{
@@ -65,7 +72,7 @@ grid-template-areas:
 "actividades actividades actividades actividades actividades actividades"
 "footer footer footer footer footer footer";
 grid-gap: 10px;
-}
+} */
 
 .logo{
 grid-area: logo;
@@ -86,7 +93,7 @@ padding: 0 10em 0 10em;
 }
 
 .links h5{
-color: #3668B1;
+color: #011330;
 background-color: #ffffff;
 margin: 2em 2em 0 2em;
 text-align: center;
@@ -97,20 +104,19 @@ color: #010914;
 }
 
 button{
-grid-area: boton;
 border-radius: 30px;
-background-color: #3668B1;
-color: #ffffff;
-margin: 1em 2em 0em 0 ;
+background-color: #011330;
+color: #011330;
 }
 
 button:hover{
-background-color: #010914;
+background-color:#343f5f;
+border-radius: 30px;
 }
 
 nav div h5{
 color: #ffffff;
-margin: 1em;
+margin: .5em;
 } 
 
 #inicio{
@@ -124,12 +130,12 @@ width: 100%;
 }
 
 #inicio h1{
-margin: 80px 10px 10px 10px;
+    margin: 0 0 1rem 0;
 }
 
 #inicio h3{
-margin: 10px;
-color: #3668B1;
+margin: 0 0 1rem 0;
+color: #011330;
 }
 
 #inicio button h5{
@@ -140,29 +146,19 @@ margin: 1em;
 }
 
 .banner{
-margin: 3em 6em 3em 6em;
-background-color: #3668B1;
-border-radius: 10px;
-grid-area: banner;
+background-color: #011330;
 display: flex;
+border-radius: 10px;
 }
 
 .banner h2{
 color: #ffffff;
-align-self: center;
-padding: 0 0 0 .5em;
+padding: 1rem ;
 }
 
 .banner h3{
 color: #ffffff;
-align-self: center;
-padding: 0 0 0 .5em;
-}
-
-.banner img{
-width: 50em;
-height: 22em;
-border-radius: 10px 0px 0 10px;
+padding: 0.5rem 1rem 0rem 1rem ;
 }
 
 .texto1{
@@ -173,13 +169,13 @@ padding: 1em;
 }
 
 .texto1 h2{
-color: #3668B1;
+color: #011330;
 text-align: left;
 }
 
 .texto1 h3{
 text-align: left;
-color: #3668B1;
+color: #011330;
 }
 
 .actividades{
@@ -193,12 +189,12 @@ margin: 1em;
 
 .actividades .cards{
 width: 330px;
-height: 430px;
+height: 300px;
 border-radius: 8px;
 box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
 overflow: hidden;
 margin: 20px;
-text-align: left;
+text-align: center;
 transition: all 0.25s;
 }
 
@@ -214,22 +210,22 @@ height: 220px;
 
 .actividades .cards h4{
 font-weight: 600;
-text-align: left;
-padding: 0 1rem;
-color: #3668B1;
+text-align: center;
+padding:  1rem 0 0 0;
+color: #011330;
 }
 
 .actividades .cards h6{
 padding: 0 1rem;
 font-size: 16px;
 font-weight: 300;
-color: #3668B1;
+color: #011330;
 }
 
 .footer{
 grid-area: footer;
 display: flex;
-background-color: #3668B1;
+background-color: #011330;
 color: #ffffff;
 padding: 1em;
 }
@@ -278,7 +274,7 @@ margin: 1em;
 
 .container .card{
 width: 330px;
-height: 430px;
+height: 330px;
 border-radius: 8px;
 box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
 overflow: hidden;
@@ -305,16 +301,14 @@ text-align: center;
 .container .card h6{
 padding: 0 1rem;
 font-weight: 300;
-color: #3668B1;
+color: #011330;
 }
 
 .container .card a{
 font-weight: 500;
 text-decoration: none;
-color: #3498db;
+color: #011330;
 }
-
-
 
 /*quienes somos*/
 
@@ -336,11 +330,11 @@ padding: 1em;
 
 .texto2 h2{
 text-align: center;
-color: #3668B1;
+color: #011330;
 }
 
 .texto2 h3{
-color: #3668B1;
+color: #011330;
 }
 
 .quienes_somos{
@@ -363,7 +357,7 @@ width: 40em;
 }
 
 .nuestros_amigos h3{
-color: #3668B1;
+color: #011330;
 }
 
 /*voluntarios*/
@@ -381,7 +375,7 @@ margin: 0 0 0 3em;
 }
 
 .texto3 h3{
-color: #3668B1;
+color: #011330;
 }
 
 /*match*/
@@ -394,7 +388,7 @@ margin: 0 0 0 3em;
 display: flex;
 margin: 0 0 0 3em;
 align-content: center;
-color: #3668B1;
+color: #011330;
 }
 
 /*registrarse*/
@@ -412,38 +406,12 @@ margin: 0 0 0 3em;
 }
 
 .texto4 h3{
-color: #3668B1;
+color: #011330;
 }
 
-.form{
-margin: 3em 0 0 3em;
-text-align: center;
-color: #010914;
-}
-
-.form-label h6{
-color: #3668B1;
-margin: 3em 0 0 0;
-}
-
-.form-control{
-text-align: left;
-background-color: #b8e0fa;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
-max-width: 100%;
-width: 40em;
-height: 3em;
-border-radius: 10px;
-}
-
-.check{
-text-align: center;
-margin: 3em 0 0 0;
-color: #3668B1;
-}
 
 .btn-primary{
-background-color: #3668B1;
+background-color: #011330;
 color: #ffffff;
 margin: 3em;
 width: 10em;
@@ -451,7 +419,7 @@ height: 3em;
 }
 
 .btn-primary button:hover{
-background-color: #4186f5;
+background-color: #011330;
 color: #041647;
 }
 
@@ -462,3 +430,127 @@ color: #041647;
 @query{
     
 } */
+
+@media (min-width: 300px){
+
+   body{
+       margin: 0;
+   }
+  
+        
+        h1{
+        font-family: roboto, sans-serif;
+        font-size: 30px !important;;
+        }
+        
+        h2 {
+        font-family: roboto, sans-serif;
+        font-size: 24px;
+        }
+        
+        h3{
+        font-family: roboto, sans-serif;
+        font-size: 20px;
+        }
+        
+        h4{
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        }
+        
+        h5{
+        font-family: roboto, sans-serif;
+        font-size: 16px;
+        }
+        
+        h6{
+        font-family: roboto, sans-serif;
+        font-size: 14px;
+        }
+
+        p{
+            font-family: roboto, sans-serif;
+            font-size: 14px; 
+        }
+
+        img{
+            max-width: 100%;
+            display: flex;
+            margin: 0;
+            }
+
+        .logo{
+        grid-area: logo;
+        max-width: 1em;
+        margin: 1em 0em 0 3em;
+        }
+        
+        .navbar-toggler {
+        margin: 0 0 0 12rem
+        }
+
+        .form{
+            margin: 1em;
+        }
+}
+
+@media (min-width: 500px){
+
+    body{
+        margin: 0;
+    }
+   
+         
+         h1{
+         font-family: roboto, sans-serif;
+         font-size: 32px !important;;
+         }
+         
+         h2 {
+         font-family: roboto, sans-serif;
+         font-size: 26px;
+         }
+         
+         h3{
+         font-family: roboto, sans-serif;
+         font-size: 24px;
+         }
+         
+         h4{
+         font-family: roboto, sans-serif;
+         font-size: 20px;
+         }
+         
+         h5{
+         font-family: roboto, sans-serif;
+         font-size: 16px;
+         }
+         
+         h6{
+         font-family: roboto, sans-serif;
+         font-size: 14px;
+         }
+ 
+         p{
+             font-family: roboto, sans-serif;
+             font-size: 14px; 
+         }
+ 
+         img{
+             max-width: 100%;
+             display: flex;
+             margin: 0;
+             }
+ 
+         .logo{
+         grid-area: logo;
+         max-width: 1em;
+         margin: 1em 0em 0 3em;
+         }
+         
+         .navbar-toggler {
+         margin: 0 0 0 20rem
+         }
+ 
+
+ }

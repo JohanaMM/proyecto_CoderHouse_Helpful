@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https: //fonts.googleapis.com/css2? familia = Roboto: ital, wght @ 0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1,900 & display = swap "
+        rel=" stylesheet ">
+
+    <!-- meta tags-->
+    <meta name="keywords" content="ayuda, voluntariado, ong, adulto mayor, discapacidad, necesidades, intereses">
+    <meta name="description" content="Ayuda a adultos mayores y personas con discapacidad a llevar una vida más feliz">
+
+    <!-- css main-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="img/logo-01.png" type="image/x-icon">
+
+    <!-- title-->
+    <title>Registrarse | Helpful</title>
+</head>
+  
+  <body id="grid_container">
+    <!-- inicio header -->
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-01.png" alt="logo pagina"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="quienes_somos.html">
+                                <h5>Quienes Somos</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="amigos.html">
+                                <h5>Amigos</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="voluntarios.html">
+                                <h5>Voluntarios</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="match.html">
+                                <h5>Match</h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button><a href="registrarse.html">
+                                <h5>Registrarse</h5>
+                            </a></button>
+                        <div class="boton">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- main -->
+  <main>
+    <section id="inicio">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 text-left">
+                  <h1>Ahora puedes registrarte</h1>
+                  <h2>Nos alegra que hayas decidido ser parte de esta linda familia</h2>
+                  <h3>Ingresa tus datos a continuación</h3>
+              </div>
+              <div class="col-md-6">
+                  <img src="../img/registrarse.png" alt="registrarse">
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- formulario -->
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label"><h6>Nombre</h6></label>
+        <input type="text" class="form-control" id="validationCustom01" value="Ingresa tu nombre" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label"><h6>apellido</h6></label>
+        <input type="text" class="form-control" id="validationCustom02" value="Ingresa tu apellido" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label"><h6>Email</h6></label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" value="Ingresa tu email" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label"><h6>Pais</h6></label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label"><h6>Provincia</h6></label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="provincia">Provincia</option>
+          <option>Mendoza</option>
+          <option>Buenos Aires</option>
+          <option>Cordoba</option>
+          <option>Rosario</option>
+          <option>Santa Fe</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label"><h6>Telefono</h6></label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            <h4>Estoy deacuerdo en que me contacten</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Registrarse</button>
+      </div>
+    </form>
+
+    <!-- pie de pagina // footer -->
+    <!-- Footer -->
+    <footer class="bg-primary text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+              <!-- Facebook -->
+              <img src="../img/facebook.png" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+              <!-- Instagram -->
+              <img src="../img/instagram.png" class="btn btn-outline-light btn-floating m-1" href="#!"
+                  role="button"><i class="fab fa-instagram"></i></a>
+              <!-- Whatsapp -->
+              <img src="../img/whatsapp.png" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <!--Grid column-->
+      </div>
+      <!--Grid row-->
+      </form>
+      </section class="">
+      <!-- Section: Links -->
+      <!--Grid row-->
+      <div class="row">
+          <div class="mb-4">
+              <!--Grid column-->
+              <h4 class="text-uppercase">Conocenos</h4>
+              <ul class="list-unstyled mb-0">
+                  <li>
+                      <a class="text-white">
+                          <h6>Telefono:1163693624</h6>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#!" class="text-white">
+                          <h6>Email:Helpful@helpful.com</h6>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <!-- Copyright -->
+          <div class="text-center p-3">
+              © 2020 Copyright:
+              <a class="text-white">
+                  <h6>Todos los derechos reservados</h6>
+              </a>
+          </div>
+          <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- css js-->
+  <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

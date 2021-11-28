@@ -1,0 +1,27 @@
+.registro{
+    display: flex;
+    img{
+        width: 60em;
+    }
+}
+
+
+.texto4{
+    margin: 0 0 0 3em;
+    h3{
+        color: #011330;
+    }
+}
+
+
+.btn-primary{
+    background-color: #011330;
+    color: #ffffff;
+    margin: 3em;
+    width: 10em;
+    height: 3em;
+    button:hover{
+        background-color: #011330;
+        color: #041647;
+    }
+}

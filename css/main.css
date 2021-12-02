@@ -1,23 +1,19 @@
 /*para carpeta de scss se llama @import"componentes/nombre del scss sin extension"*/
-.registro {
-  display: flex; }
-  .registro img {
+#form {
+  display: flex;
+  margin: 100em; }
+  #form img {
     width: 60em; }
 
 .texto4 {
   margin: 0 0 0 3em; }
   .texto4 h3 {
     color: #011330; }
+  .texto4 h6 {
+    color: #011330; }
 
-.btn-primary {
-  background-color: #011330;
-  color: #ffffff;
-  margin: 3em;
-  width: 10em;
-  height: 3em; }
-  .btn-primary button:hover {
-    background-color: #011330;
-    color: #041647; }
+.form-label h6 {
+  color: #011330; }
 
 .nuestros_amigos {
   display: flex; }
@@ -25,6 +21,35 @@
     width: 40em; }
   .nuestros_amigos h3 {
     color: #011330; }
+
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em; }
+  .container .cards {
+    width: 330px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .container .cards img {
+      width: 330px;
+      height: 210px; }
+    .container .cards h4 {
+      padding: 1rem;
+      justify-content: left;
+      color: #011330; }
+    .container .cards h5 {
+      font-weight: 300;
+      color: #011330; }
+    .container .cards h6 {
+      font-weight: 300;
+      color: #011330; }
 
 .match {
   margin: 0 0 0 3em; }
@@ -34,28 +59,25 @@
   margin: 0 0 0 3em;
   align-content: center;
   color: #011330; }
+  .form-check h6 {
+    color: #011330;
+    padding: 0.5em 0em 0 0.5em; }
 
-.inicio {
-  background-image: url(../img/quienes_somos.jpg);
-  width: 80em;
-  height: 50em; }
-
-.texto2 {
-  background-color: #ffffff;
-  width: 30em;
-  height: 20em;
+#texto2 {
+  max-width: 100%;
   margin: 0em 4em 0 4em;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 1em; }
-  .texto2 h2 {
+  border-radius: 10px; }
+  #texto2 h2 {
     text-align: center;
     color: #011330; }
-  .texto2 h3 {
+  #texto2 h3 {
     color: #011330; }
 
-.quienes_somos {
-  text-align: center; }
+.quienes_somos h1 {
+  text-align: center;
+  color: #011330;
+  margin-top: 1em; }
 
 .historia {
   margin: 3em 5em 3em 5em;
@@ -73,44 +95,54 @@
 
 body {
   background-color: #ffffff;
-  margin: 1em !important;
+  margin: 6em 0em 0 0em;
   padding: 0;
   line-height: 2.5em; }
+
+main {
+  margin: 0 2em 0 2em; }
 
 img {
   max-width: 100%;
   display: flex; }
+  img .logo {
+    grid-area: logo;
+    max-width: 5em;
+    margin: 1em 0em 0 3em;
+    transition: transform .2s; }
+    img .logo :hover {
+      transform: scale(1.5); }
 
 div {
-  color: #ffffff; }
+  color: #011330; }
 
 h1 {
-  font-size: 42px;
-  color: #011330;
+  font-size: 41px;
+  color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h2 {
-  font-size: 32px;
-  color: #011330;
+  font-size: 23.5px;
+  color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h3 {
-  font-size: 24px;
-  color: #011330;
+  font-size: 17.66667px;
+  color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h4 {
-  font-size: 20px;
+  font-size: 14.75px;
   color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h5 {
-  font-size: 16px;
+  font-size: 13px;
   color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h6 {
-  font-size: 12px;
+  font-size: 11.83333px;
   color: #ffffff;
   font-family: roboto, sans-serif; }
 
@@ -129,59 +161,71 @@ h6 {
 p {
   color: #011330; }
 
-.logo {
-  grid-area: logo;
-  max-width: 5em;
-  margin: 1em 0em 0 3em;
-  transition: transform .2s; }
-  .logo :hover {
-    transform: scale(1.5); }
-
-.links {
-  grid-area: links;
-  display: flex;
-  padding: 0 10em 0 10em; }
-  .links h5 {
-    color: #011330;
-    background-color: #ffffff;
-    margin: 2em 2em 0 2em;
-    text-align: center; }
-    .links h5 :hover {
-      color: #010914; }
+h5 {
+  padding: 0.5em 2em 0.5em 2em; }
 
 button {
   border-radius: 30px;
   background-color: #011330;
-  color: #011330; }
+  color: #011330;
+  text-decoration: none; }
   button :hover {
     background-color: #343f5f;
-    border-radius: 30px; }
+    border-radius: 30px;
+    text-decoration: none; }
+
+#card-body {
+  background-color: #343f5f; }
+  #card-body h2 {
+    color: #011330; }
+  #card-body h3 {
+    color: #011330; }
+
+#text h2 {
+  color: #011330;
+  text-align: center;
+  margin-top: 1em; }
+
+#text h3 {
+  color: #011330;
+  text-align: center; }
+
+#text button {
+  margin-left: 45%; }
 
 #inicio {
   grid-area: inicio;
   display: flex;
   margin: 3em; }
-
+  #inicio img {
+    width: 100%; }
   #inicio h1 {
-    margin: 0 0 1rem 0; }
+    color: #011330; }
+  #inicio h2 {
+    color: #011330; }
   #inicio h3 {
-    margin: 0 0 1rem 0;
     color: #011330; }
   #inicio button h5 {
     border-radius: 30px;
     color: #ffffff;
-    margin: 1em; }
+    margin: 1em;
+    text-decoration: none; }
 
 .banner {
   background-color: #011330;
   display: flex;
   border-radius: 10px; }
+  .banner img {
+    width: 500px; }
   .banner h2 {
     color: #ffffff;
-    padding: 1rem; }
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 24px; }
   .banner h3 {
     color: #ffffff;
-    padding: 0.5rem 1rem 0rem 1rem; }
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    margin: 1rem; }
 
 .texto1 {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -196,7 +240,6 @@ button {
     color: #011330; }
 
 .actividades {
-  grid-area: actividades;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -211,12 +254,9 @@ button {
     margin: 20px;
     text-align: center;
     transition: all 0.25s; }
-    .actividades .cards :hover {
-      transform: translateY(-15px);
-      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
     .actividades .cards img {
       width: 330px;
-      height: 220px; }
+      height: 210px; }
     .actividades .cards h4 {
       font-weight: 600;
       text-align: center;
@@ -227,6 +267,10 @@ button {
       font-size: 16px;
       font-weight: 300;
       color: #011330; }
+
+.cards:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
 .footer {
   grid-area: footer;
@@ -243,13 +287,13 @@ button {
     padding: 10px;
     margin: 0em 0em 0em 20em; }
 
-.container {
+.container2 {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 1em; }
-  .container .card {
+  .container2 .card {
     width: 330px;
     height: 330px;
     border-radius: 8px;
@@ -258,105 +302,20 @@ button {
     margin: 20px;
     text-align: left;
     transition: all 0.25s; }
-    .container .card :hover {
+    .container2 .card :hover {
       transform: translateY(-15px);
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
-
-      .container img {
-    width: 330px;
-    height: 220px; }
-  .container h5 {
-    font-weight: 600;
-    text-align: center; }
-  .container h6 {
-    padding: 0 1rem;
-    font-weight: 300;
-    color: #011330; }
-  .container a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #011330; }
-
-/* @media (min-width: 300px) {
-  body {
-    margin: 0; }
-  h1 {
-    font-size: 30px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h2 {
-    font-size: 15px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h3 {
-    font-size: 10px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h4 {
-    font-size: 7.5px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h5 {
-    font-size: 6px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h6 {
-    font-size: 5px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  p {
-    font-family: roboto, sans-serif;
-    font-size: 14px; }
-  img {
-    max-width: 100%;
-    display: flex;
-    margin: 0; }
-  .logo {
-    grid-area: logo;
-    max-width: 1em;
-    margin: 1em 0em 0 3em; }
-  .navbar-toggler {
-    margin: 0 0 0 12rem; }
-  .form {
-    margin: 1em; } }
-
-@media (min-width: 500px) {
-  body {
-    margin: 0; }
-  h1 {
-    font-size: 32px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h2 {
-    font-size: 16px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h3 {
-    font-size: 10.66667px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h4 {
-    font-size: 8px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h5 {
-    font-size: 6.4px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h6 {
-    font-size: 5.33333px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  p {
-    font-family: roboto, sans-serif;
-    font-size: 14px; }
-  img {
-    max-width: 100%;
-    display: flex;
-    margin: 0; }
-  .logo {
-    grid-area: logo;
-    max-width: 1em;
-    margin: 1em 0em 0 3em; }
-  .navbar-toggler {
-    margin: 0 0 0 20rem; } } */
+    .container2 .card img {
+      width: 330px;
+      height: 220px; }
+    .container2 .card h5 {
+      font-weight: 600;
+      text-align: center; }
+    .container2 .card h6 {
+      padding: 0 1rem;
+      font-weight: 300;
+      color: #011330; }
+    .container2 .card a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #011330; }

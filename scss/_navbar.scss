@@ -114,6 +114,7 @@
   // For always expanded or extra full navbars, ensure content aligns itself
   // properly vertically. Can be easily overridden with flex utilities.
   align-items: center;
+  color: #ffffff;
 }
 
 // Button for toggling the navbar when in its collapsed state
@@ -287,11 +288,11 @@
 // White links against a dark background
 .navbar-dark {
   .navbar-brand {
-    color: $navbar-dark-brand-color;
+    color: #ffffff;
 
     &:hover,
     &:focus {
-      color: $navbar-dark-brand-hover-color;
+      color:#ffffff;
     }
   }
 

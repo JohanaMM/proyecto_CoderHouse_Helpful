@@ -31,7 +31,7 @@
   --bs-primary: #011330;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
-  --bs-info: #0dcaf0;
+  --bs-info: #011330;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
@@ -328,13 +328,7 @@ label {
   display: inline-block;
 }
 
-button {
-  border-radius: 0;
-}
 
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
 
 input,
 button,
@@ -347,10 +341,7 @@ textarea {
   line-height: inherit;
 }
 
-button,#011330
-select {
-  text-transform: none;
-}
+
 
 [role=button] {
   cursor: pointer;
@@ -3011,6 +3002,7 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
+  background-color: #011330;
 
 }
 .btn-primary:hover {
@@ -3922,10 +3914,10 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -4492,7 +4484,7 @@ background-color: #032355;
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
+/* 
 .card {
   position: relative;
   display: flex;
@@ -4607,8 +4599,9 @@ background-color: #032355;
 }
 
 .card-group > .card {
-  margin-bottom: 0.75rem;
-}
+  margin-bottom: 0.75rem; */
+/* } */
+
 @media (min-width: 576px) {
   .card-group {
     display: flex;
@@ -7795,7 +7788,7 @@ color: #011330;
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #011330;
 }
 
 .bg-secondary {

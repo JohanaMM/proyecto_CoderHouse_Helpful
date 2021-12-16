@@ -1,23 +1,17 @@
 /*para carpeta de scss se llama @import"componentes/nombre del scss sin extension"*/
-.registro {
-  display: flex; }
-  .registro img {
-    width: 60em; }
+.form {
+  display: flex;
+  max-width: 100%; }
 
 .texto4 {
   margin: 0 0 0 3em; }
   .texto4 h3 {
     color: #011330; }
+  .texto4 h6 {
+    color: #011330; }
 
-.btn-primary {
-  background-color: #011330;
-  color: #ffffff;
-  margin: 3em;
-  width: 10em;
-  height: 3em; }
-  .btn-primary button:hover {
-    background-color: #011330;
-    color: #041647; }
+.form-label h6 {
+  color: #011330; }
 
 .nuestros_amigos {
   display: flex; }
@@ -26,39 +20,70 @@
   .nuestros_amigos h3 {
     color: #011330; }
 
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em; }
+  .container .cards {
+    width: 330px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .container .cards img {
+      width: 330px;
+      height: 210px; }
+    .container .cards h4 {
+      padding: 1rem;
+      justify-content: left;
+      color: #011330; }
+    .container .cards h5 {
+      font-weight: 300;
+      color: #011330; }
+    .container .cards h6 {
+      font-weight: 300;
+      color: #011330; }
+
 .match {
   margin: 0 0 0 3em; }
 
 .form-check {
   display: flex;
-  margin: 0 0 0 3em;
+  margin: 0 0 0.5em 3em;
   align-content: center;
   color: #011330; }
+  .form-check h6 {
+    color: #011330;
+    padding: 0.5em 0em 0 0.5em; }
+  .form-check label {
+    padding: 0 0 0 0.5em; }
 
-.inicio {
-  background-image: url(../img/quienes_somos.jpg);
-  width: 80em;
-  height: 50em; }
-
-.texto2 {
-  background-color: #ffffff;
-  width: 30em;
-  height: 20em;
-  margin: 0em 4em 0 4em;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 1em; }
-  .texto2 h2 {
+#texto2 {
+  max-width: 100%;
+  display: flex;
+  margin: 0; }
+  #texto2 img {
+    display: flex;
+    max-width: 100%;
+    width: 100em; }
+  #texto2 h2 {
     text-align: center;
     color: #011330; }
-  .texto2 h3 {
+  #texto2 h3 {
     color: #011330; }
 
-.quienes_somos {
-  text-align: center; }
+.quienes_somos h1 {
+  text-align: center;
+  color: #011330;
+  margin-top: 1em; }
 
 .historia {
-  margin: 3em 5em 3em 5em;
+  margin: 1em;
   line-height: 1.5em; }
 
 .voluntarios {
@@ -73,44 +98,46 @@
 
 body {
   background-color: #ffffff;
-  margin: 1em !important;
-  padding: 0;
-  line-height: 2.5em; }
+  margin: 6em 0em 0 0em;
+  padding: 0; }
+
+main {
+  margin: 0 2em 0 2em; }
 
 img {
-  max-width: 100%;
-  display: flex; }
+  display: block;
+  margin: 0 auto; }
 
 div {
-  color: #ffffff; }
+  color: #011330; }
 
 h1 {
-  font-size: 42px;
-  color: #011330;
+  font-size: 41px;
+  color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h2 {
-  font-size: 32px;
-  color: #011330;
+  font-size: 23.5px;
+  color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h3 {
-  font-size: 24px;
-  color: #011330;
+  font-size: 17.66667px;
+  color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h4 {
-  font-size: 20px;
+  font-size: 14.75px;
   color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h5 {
-  font-size: 16px;
+  font-size: 13px;
   color: #ffffff;
   font-family: roboto, sans-serif; }
 
 h6 {
-  font-size: 12px;
+  font-size: 11.83333px;
   color: #ffffff;
   font-family: roboto, sans-serif; }
 
@@ -129,59 +156,71 @@ h6 {
 p {
   color: #011330; }
 
-.logo {
-  grid-area: logo;
-  max-width: 5em;
-  margin: 1em 0em 0 3em;
-  transition: transform .2s; }
-  .logo :hover {
-    transform: scale(1.5); }
-
-.links {
-  grid-area: links;
-  display: flex;
-  padding: 0 10em 0 10em; }
-  .links h5 {
-    color: #011330;
-    background-color: #ffffff;
-    margin: 2em 2em 0 2em;
-    text-align: center; }
-    .links h5 :hover {
-      color: #010914; }
+h4 {
+  padding: 0.5em 2em 0.5em 2em; }
 
 button {
   border-radius: 30px;
   background-color: #011330;
-  color: #011330; }
+  text-decoration: none; }
   button :hover {
     background-color: #343f5f;
-    border-radius: 30px; }
+    border-radius: 30px;
+    text-decoration: none;
+    color: #0d6efd; }
+
+#card-body {
+  background-color: #343f5f; }
+  #card-body h2 {
+    color: #011330; }
+  #card-body h3 {
+    color: #011330; }
+
+#text h2 {
+  color: #011330;
+  text-align: center;
+  margin-top: 1em; }
+
+#text h3 {
+  color: #011330;
+  text-align: center; }
+
+#text button {
+  margin-left: 45%; }
 
 #inicio {
-  grid-area: inicio;
   display: flex;
   margin: 3em; }
-
+  #inicio img {
+    max-width: 100%;
+    width: 100em; }
   #inicio h1 {
-    margin: 0 0 1rem 0; }
+    color: #011330; }
+  #inicio h2 {
+    color: #011330; }
   #inicio h3 {
-    margin: 0 0 1rem 0;
     color: #011330; }
   #inicio button h5 {
     border-radius: 30px;
     color: #ffffff;
-    margin: 1em; }
+    margin: 1em;
+    text-decoration: none; }
 
 .banner {
   background-color: #011330;
   display: flex;
   border-radius: 10px; }
+  .banner img {
+    width: 500px; }
   .banner h2 {
     color: #ffffff;
-    padding: 1rem; }
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 24px; }
   .banner h3 {
     color: #ffffff;
-    padding: 0.5rem 1rem 0rem 1rem; }
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    margin: 1rem; }
 
 .texto1 {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -196,7 +235,6 @@ button {
     color: #011330; }
 
 .actividades {
-  grid-area: actividades;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -204,52 +242,44 @@ button {
   margin: 1em; }
   .actividades .cards {
     width: 330px;
-    height: 300px;
+    height: 330px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.25s; }
-    .actividades .cards :hover {
-      transform: translateY(-15px);
-      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
     .actividades .cards img {
       width: 330px;
-      height: 220px; }
+      height: 210px; }
     .actividades .cards h4 {
       font-weight: 600;
       text-align: center;
-      padding: 1rem 0 0 0;
       color: #011330; }
     .actividades .cards h6 {
-      padding: 0 1rem;
       font-size: 16px;
       font-weight: 300;
       color: #011330; }
 
-.footer {
-  grid-area: footer;
-  display: flex;
-  background-color: #011330;
-  color: #ffffff;
-  padding: 1em; }
-  .footer .redes {
-    margin: 0em 0em 0em 20em;
-    display: flex;
-    align-items: center; }
-  .footer .derechos {
-    text-align: end;
-    padding: 10px;
-    margin: 0em 0em 0em 20em; }
+.cards:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
-.container {
+footer {
+  padding: 1em 1em 1em 3em;
+  grid-area: footer;
+  display: block;
+  background-color: #011330;
+  position: relative;
+  text-align: center; }
+
+.container2 {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 1em; }
-  .container .card {
+  .container2 .card {
     width: 330px;
     height: 330px;
     border-radius: 8px;
@@ -258,105 +288,55 @@ button {
     margin: 20px;
     text-align: left;
     transition: all 0.25s; }
-    .container .card :hover {
+    .container2 .card :hover {
       transform: translateY(-15px);
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+    .container2 .card img {
+      width: 330px;
+      height: 220px; }
+    .container2 .card h4 {
+      font-weight: 600;
+      text-align: center; }
+    .container2 .card h6 {
+      font-weight: 300;
+      color: #011330; }
+    .container2 .card a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #011330; }
 
-      .container img {
-    width: 330px;
-    height: 220px; }
-  .container h5 {
-    font-weight: 600;
-    text-align: center; }
-  .container h6 {
-    padding: 0 1rem;
-    font-weight: 300;
-    color: #011330; }
-  .container a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #011330; }
-
-/* @media (min-width: 300px) {
-  body {
-    margin: 0; }
-  h1 {
-    font-size: 30px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h2 {
-    font-size: 15px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h3 {
-    font-size: 10px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h4 {
-    font-size: 7.5px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h5 {
-    font-size: 6px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h6 {
-    font-size: 5px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  p {
-    font-family: roboto, sans-serif;
-    font-size: 14px; }
-  img {
+/*-----*/
+header {
+  width: 100%; }
+  header nav {
+    z-index: 1000;
     max-width: 100%;
-    display: flex;
-    margin: 0; }
-  .logo {
-    grid-area: logo;
-    max-width: 1em;
-    margin: 1em 0em 0 3em; }
-  .navbar-toggler {
-    margin: 0 0 0 12rem; }
-  .form {
-    margin: 1em; } }
-
-@media (min-width: 500px) {
-  body {
-    margin: 0; }
-  h1 {
-    font-size: 32px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h2 {
-    font-size: 16px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h3 {
-    font-size: 10.66667px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h4 {
-    font-size: 8px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h5 {
-    font-size: 6.4px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  h6 {
-    font-size: 5.33333px;
-    color: #011330;
-    font-family: roboto, sans-serif; }
-  p {
-    font-family: roboto, sans-serif;
-    font-size: 14px; }
-  img {
-    max-width: 100%;
-    display: flex;
-    margin: 0; }
-  .logo {
-    grid-area: logo;
-    max-width: 1em;
-    margin: 1em 0em 0 3em; }
-  .navbar-toggler {
-    margin: 0 0 0 20rem; } } */
+    width: 100%; }
+    @media screen and (max-width: 300px) {
+      header nav {
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll; } }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        display: inline-block;
+        position: relative; }
+        @media screen and (max-width: 300px) {
+          header nav ul li {
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5); } }
+        header nav ul li :hover {
+          background: #092144;
+          color: #7daffc; }
+        header nav ul li a {
+          color: #fff;
+          display: block;
+          text-decoration: none;
+          padding: 20px; }
+          @media screen and (max-width: 300px) {
+            header nav ul li a {
+              display: block; } }

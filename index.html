@@ -28,16 +28,14 @@
     <link rel="shortcut icon" href="img/logo-01.png" type="image/x-icon">
 
     <!-- title-->
-    <title>comunidad de ayuda | Helpful</title>
+    <title>Comunidad de ayuda | Helpful</title>
 </head>
-
 <body id="grid_container">
     <!-- inicio header -->
-    <header>
+      <header>
         <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/logo-01.png" alt="logo pagina"></a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -45,38 +43,37 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/quienes_somos.html">
-                                <h5>Quienes Somos</h5>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="pages/quienes_somos.html">
+                                <h4>Quienes Somos</h4>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/amigos.html">
-                                <h5>Amigos</h5>
+                                <h4>Amigos</h4>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/voluntarios.html">
-                                <h5>Voluntarios</h5>
+                                <h4>Voluntarios</h4>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/match.html">
-                                <h5>Match</h5>
+                                <h4>Match</h4>
                             </a>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button><a href="pages/registrarse.html">
-                                <h5>Registrarse</h5>
-                            </a></button>
-                        <div class="boton">
-                        </div>
+                        <a href="pages/registrarse.html">
+                                <h4>Registrarse</h4>
+                            </a>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <!-- main -->
     <main>
@@ -86,11 +83,11 @@
                     <div class="col-md-6">
                         <h1>Acompaña a personas que te necesitan</h1>
                         <h3>Unete a nuestra comunidad y ayudemos juntos</h3>
-                        <div class="boton">
-                            <button><a href="pages/registrarse.html">
-                                    <h5>Registrarse</h5>
-                                </a></button>
-                        </div>
+                        <form class="d-flex">
+                            <a href="registrarse.html">
+                                    <h4>Registrarse</h4>
+                                </a>
+                        </form>
                     </div>
                     <div class="col-md-6">
                         <img src="img/index.png" alt="imagen fundación">
@@ -126,17 +123,22 @@
             </div>
         </section>
 
-
-        <section>
-            <div class="card">
-                <div class="card-body text-center">
-                    <h2 class="card-title text-center ">
-                        También puedes participar en actividades
-                    </h2>
-                    <h3 class="card-text text-center">
-                        Tenemos agendas semanales y mucha diversidad.
-                    </h3>
-                    <a href="pages/registrarse.html" class="btn btn-primary">registrarse</a>
+        <section id="text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>
+                            También puedes participar en actividades
+                        </h2>
+                        <h3>
+                            Tenemos agendas semanales y mucha diversidad.
+                        </h3>
+                        <form class="d-flex">
+                            <a href="registrarse.html">
+                                    <h4>Registrarse</h4>
+                                </a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,55 +196,47 @@
     </main>
 
 
+       <!-- pie de pagina // footer -->
     <!-- Footer -->
-    <footer class="bg-primary text-center text-white">
+    <footer>
         <!-- Grid container -->
-        <div class="p-4">
             <!-- Section: Social media -->
-            <section class="mb-4">
+            <section>
                 <!-- Facebook -->
-                <img src="img/facebook.png" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-facebook-f"></i></a>
-                <!-- Instagram -->
-                <img src="img/instagram.png" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-instagram"></i></a>
-                <!-- Whatsapp -->
-                <img src="img/whatsapp.png" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-linkedin-in"></i></a>
+                <a href=”url” target=”_blank”> <img src="img/facebook.png" class="btn btn-outline-light btn-floating m-1"  role="button" ></a>
+                 <!-- Instagram -->
+                <a href=”url” target=”_blank”> <img src="img/instagram.png" class="btn btn-outline-light btn-floating m-1" role="button"></a>
+                 <!-- Whatsapp -->
+                <a href=”url” target=”_blank”> <img src="img/whatsapp.png" class="btn btn-outline-light btn-floating m-1" role="button"></a>
                 <!--Grid column-->
-        </div>
+            </section>   
         <!--Grid row-->
-        </form>
-        </section class="">
-        <!-- Section: Links -->
-        <!--Grid row-->
-        <div class="row">
-            <div class="mb-4">
+        <section> 
+            <div>
                 <!--Grid column-->
                 <h4 class="text-uppercase">Conocenos</h4>
                 <ul class="list-unstyled mb-0">
                     <li>
-                        <a class="text-white">
+                        <a>
                             <h6>Telefono:1163693624</h6>
                         </a>
                     </li>
                     <li>
-                        <a href="#!" class="text-white">
+                        <a href=”url” target=”_blank class="text-white">
                             <h6>Email:Helpful@helpful.com</h6>
                         </a>
                     </li>
                 </ul>
             </div>
             <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2020 Copyright:
-                <a class="text-white">
+            <div>
+                <a>
+                  <h5>© 2020 Copyright</h5>
                     <h6>Todos los derechos reservados</h6>
                 </a>
             </div>
-            <!-- Copyright -->
+        </section>
     </footer>
-    <!-- Footer -->
 
     <!-- css js-->
     <script src="js/bootstrap.js"></script>
